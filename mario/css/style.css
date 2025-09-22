@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.game-board-menu img{
+    width: 200px;
+}
+
+.fundo{
+background-color: black;
+width: 100%;
+height: 100vh;
+}
+
+.fundo .game-board-menu {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(#1a2b5c,);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+   
+}
+
+  .fundo .game-board-menu button {
+    margin-top: 580px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    color: antiquewhite;
+    cursor: pointer;
+
+}
+.fundo .game-board-menu  {
+    width: 80%;
+    height: 800px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url(/imagens/141\ Sem\ Título.png) ;
+    background-size: cover;
+
+}
+
+.fundo .game-board {
+    width: 80%;
+    height: 800px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url(/imagens/fundo.png);
+    background-size: cover;
+}
+
+
+
+.fundo .nuvens {
+    width: 80px;
+    animation: cloud 4s infinite linear;
+    margin-top: 200px;
+    position: absolute;
+}
+
+.fundo .pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 2s infinite linear;
+    z-index: 1;
+}
+
+.fundo .mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.fundo .grama{
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(#3f3f3f00,#4b4a4a);
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.fundo .jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes cloud {
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 100%;
+    }
+
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
