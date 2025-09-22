@@ -1,9 +1,9 @@
 # TODO - Jogo Branca de neve
 
 ## Funcionalidades
-- [ ] Criar personagem principal (Mario)
+- [ ] Criar personagem principal (Branca de neve)
 - [ ] Implementar sistema de pulo
-- [ ] Adicionar inimigos (Goombas, Koopas)
+- [ ] Adicionar inimigos (maça)
 - [ ] Implementar tela de game over
 
 ## Melhorias Futuras
